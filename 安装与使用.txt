@@ -1,0 +1,45 @@
+1：安装方法
+
+将BatchExport.py文件复制到 C:\文档\maya\scripts 文件夹内
+
+2020以下maya在maya脚本编辑器python栏内运行以下代码:
+import BatchExport
+reload(BatchExport)
+BatchExport.BatchExportWin()
+
+2022以上maya在maya脚本编辑器python栏内运行以下代码:
+import importlib
+import BatchExport
+importlib.reload(BatchExport)
+BatchExport.BatchExportWin()
+
+2：使用方法：
+
+选择需要导出的模型，选择需要导出的格式，点击导出
+
+会有一个窗口打开，这个窗口内选择需要保存到哪个文件夹内，然后点击 选择文件夹
+
+这时会在选择的文件夹内新建一个文件夹（文件夹名称为当前文件夹内的文件个数。这个可以不用理解，知道会新建一个文件夹就行，这个文件夹的作用是为了防止不同场景导出同名称文件覆盖原有）
+
+会将选择的模型导出到新建的文件夹内，导出的文件名称是您在maya内的模型名称
+
+如果您选择的模型有重复的名称，会先在场景内重命名模型，然后导出
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
