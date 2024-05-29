@@ -1,0 +1,34 @@
+名字: 使用Conda的Python包
+
+在: [推]
+
+工作:
+构建-linux:
+连续运行: Ubuntu-最新版
+战略:
+最大并行度: 5
+
+步伐:
+    - 使用: 动作/签出@v4
+    - 名字: 设置Python 3.10
+使用: 操作/设置-python@v3
+随着:
+python版本: '3.10'
+    - 名字: 将conda添加到系统路径
+奔跑: |
+# $CONDA是一个指向miniconda目录根目录的环境变量
+echo $ CONDA/bin》》$ GITHUB _ PATH
+    - 名字: 安装依赖项
+奔跑: |
+conda环境更新-文件environment.yml -名称库
+    - 名字: 带薄片的棉绒8
+奔跑: |
+康达安装片8
+        #如果存在Python语法错误或未定义的名称，则停止构建
+flake8。-计数-选择=E9，F63，F7，F82 -显示-来源-统计
+        # exit-zero将所有错误视为警告。GitHub编辑器有127个字符宽
+flake8。-计数-退出-零-最大复杂性=10 -最大行长度=127 -统计
+    - 名字: Test with pytest
+奔跑: |
+康达安装pytest
+        pytest
