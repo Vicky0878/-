@@ -1,3 +1,7 @@
+![tb_image_share_1716939822707 jpg](https://github.com/Vicky0878/MAYA-Batch-Export-script/assets/125170736/e4ad6d1e-54e0-4031-b009-f8dbfd0e9c15)
+
+Batch Export is a simple maya plugin that supports batch export of fbx obj ma mb files if you like to download it and use it. It works in the 2023maya version
+
 1: Installation method
 
 Copy the BatchExport.py file into the C:\ documents \maya\scripts folder
@@ -24,5 +28,4 @@ A new folder is created within the selected folder (the folder name is the numbe
 The selected model will be exported to a newly created folder with the exported file name of the model you have in maya
 
 If the model you select has a duplicate name, the model is first renamed within the scene and then exported# -
-![tb_image_share_1716939822707 jpg](https://github.com/Vicky0878/-/assets/125170736/dc86a769-9f0c-4fc4-b8ff-7fa5c7f5687e)
 
